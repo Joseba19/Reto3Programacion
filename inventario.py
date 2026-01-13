@@ -116,6 +116,35 @@ def visualizarComponentes():
     conn.commit()
     conn.close()
 
+def buscarComponente(componente):
+    conn = sqlite3.connect("inventario.db")
+    cursor = conn.cursor()
+    #Consulta SQL generada mediante Inteligencia Artificial
+    cursor.execute(f"""
+    SELECT
+    c.codigo,
+    c.descripcion,
+    d.tipo_defecto,
+    SUM(d.cantidad_defectuosa) AS total_defectuosos
+FROM componentes c
+JOIN recepciones r 
+    ON r.codigo_componente = c.codigo
+JOIN defectuosos d 
+    ON d.id_recepcion = r.id
+WHERE c.codigo = '{componente}'
+GROUP BY c.codigo, c.descripcion, d.tipo_defecto
+ORDER BY total_defectuosos DESC;
+""")
+    salida = cursor.fetchall()
+    
+    for s in salida:
+        print(f"\n{s[0]}: {s[1]}")
+        print(f"Unidades defectuosas:{s[3]}")
+        print(f"Motivo: {s[2]}")
+
+    conn.commit()
+    conn.close()
+
 def eliminarTablas():
     conn = sqlite3.connect("inventario.db")
     cursor = conn.cursor()
@@ -145,6 +174,9 @@ if __name__ == "__main__":
             print("")
             visualizarComponentes()
         elif eleccion == 3:
-            eliminarTablas()
+            componente = input("\nIntroduce el codigo del componente que quieres buscar: ")
+            buscarComponente(componente)
         elif eleccion == 4:
+            eliminarTablas()
+        elif eleccion == 5:
             exit = True
