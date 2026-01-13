@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "fecha_generacion": "2026-01-12T08:00:00",
+    "origen": "Almacen Central - España",
+    "version": "1.0",
+    "total_registros": 50
+  },
+  "recepciones": [
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-A-1234",
+      "descripcion": "Filtro de aceite premium",
+      "cantidad": 150,
+      "proveedor": "ProveedorTech",
+      "lote": "LOTE-2026-001",
+      "estado": "OK",
+      "observaciones": "Recepción matutina, temperatura ambiente correcta"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-B-5678",
+      "descripcion": "Bujía de encendido",
+      "cantidad": 200,
+      "proveedor": "AutoParts Inc",
+      "lote": "LOTE-2026-002",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-C-9012",
+      "descripcion": "Pastilla de freno delantera",
+      "cantidad": 100,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-003",
+      "estado": "DEFECTUOSO",
+      "observaciones": "5 unidades con grietas en superficie de fricción"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-A-1234",
+      "descripcion": "Filtro de aceite premium",
+      "cantidad": 50,
+      "proveedor": "ProveedorTech",
+      "lote": "LOTE-2026-004",
+      "estado": "OK",
+      "observaciones": "Recepción tarde, pedido urgente"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-D-3456",
+      "descripcion": "Correa de distribución",
+      "cantidad": 75,
+      "proveedor": "BeltMasters",
+      "lote": "LOTE-2026-005",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-E-7890",
+      "descripcion": "Radiador completo",
+      "cantidad": 30,
+      "proveedor": "CoolingSystems",
+      "lote": "LOTE-2026-006",
+      "estado": "DEFECTUOSO",
+      "observaciones": "2 unidades con fugas detectadas en prueba de presión"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-F-2468",
+      "descripcion": "Bomba de combustible",
+      "cantidad": 120,
+      "proveedor": "FuelPro",
+      "lote": "LOTE-2026-007",
+      "estado": "OK",
+      "observaciones": "Entrega urgente para línea de producción"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-G-1357",
+      "descripcion": "Amortiguador trasero",
+      "cantidad": 80,
+      "proveedor": "SuspensionTech",
+      "lote": "LOTE-2026-008",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-H-2468",
+      "descripcion": "Disco de freno ventilado",
+      "cantidad": 90,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-009",
+      "estado": "OK",
+      "observaciones": "Material de alta calidad, certificado ISO"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-I-3579",
+      "descripcion": "Batería 12V 60Ah",
+      "cantidad": 45,
+      "proveedor": "PowerCell",
+      "lote": "LOTE-2026-010",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-J-4680",
+      "descripcion": "Alternador 120A",
+      "cantidad": 60,
+      "proveedor": "ElectricMotors",
+      "lote": "LOTE-2026-011",
+      "estado": "DEFECTUOSO",
+      "observaciones": "3 unidades no pasan prueba de carga"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-K-5791",
+      "descripcion": "Filtro de aire deportivo",
+      "cantidad": 180,
+      "proveedor": "AirFlow",
+      "lote": "LOTE-2026-012",
+      "estado": "OK",
+      "observaciones": "Nueva referencia, reemplaza COMP-K-5790"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-L-6802",
+      "descripcion": "Termostato motor",
+      "cantidad": 110,
+      "proveedor": "CoolingSystems",
+      "lote": "LOTE-2026-013",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-M-7913",
+      "descripcion": "Junta de culata reforzada",
+      "cantidad": 70,
+      "proveedor": "GasketPro",
+      "lote": "LOTE-2026-014",
+      "estado": "OK",
+      "observaciones": "Material grafito multicapa"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-N-8024",
+      "descripcion": "Sensor de oxígeno lambda",
+      "cantidad": 95,
+      "proveedor": "SensorTech",
+      "lote": "LOTE-2026-015",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-O-9135",
+      "descripcion": "Catalizador cerámico",
+      "cantidad": 40,
+      "proveedor": "EmissionControl",
+      "lote": "LOTE-2026-016",
+      "estado": "DEFECTUOSO",
+      "observaciones": "1 unidad con estructura interna dañada"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-P-0246",
+      "descripcion": "Turbocompresor variable",
+      "cantidad": 25,
+      "proveedor": "TurboMax",
+      "lote": "LOTE-2026-017",
+      "estado": "OK",
+      "observaciones": "Modelo de alto rendimiento"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-Q-1357",
+      "descripcion": "Inyector de combustible",
+      "cantidad": 160,
+      "proveedor": "FuelPro",
+      "lote": "LOTE-2026-018",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-R-2468",
+      "descripcion": "Válvula EGR",
+      "cantidad": 85,
+      "proveedor": "EmissionControl",
+      "lote": "LOTE-2026-019",
+      "estado": "OK",
+      "observaciones": "Compatible con Euro 6"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-S-3579",
+      "descripcion": "Bomba de agua electrónica",
+      "cantidad": 55,
+      "proveedor": "CoolingSystems",
+      "lote": "LOTE-2026-020",
+      "estado": "DEFECTUOSO",
+      "observaciones": "4 unidades con ruido anormal en rodamiento"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-T-4680",
+      "descripcion": "Compresor de aire acondicionado",
+      "cantidad": 35,
+      "proveedor": "ClimaTech",
+      "lote": "LOTE-2026-021",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-U-5791",
+      "descripcion": "Condensador AC",
+      "cantidad": 42,
+      "proveedor": "ClimaTech",
+      "lote": "LOTE-2026-022",
+      "estado": "OK",
+      "observaciones": "Incluye válvula de expansión"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-V-6802",
+      "descripcion": "Filtro de habitáculo carbón activo",
+      "cantidad": 220,
+      "proveedor": "AirFlow",
+      "lote": "LOTE-2026-023",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-W-7913",
+      "descripcion": "Motor de arranque reforzado",
+      "cantidad": 48,
+      "proveedor": "ElectricMotors",
+      "lote": "LOTE-2026-024",
+      "estado": "OK",
+      "observaciones": "Para motores diesel"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-X-8024",
+      "descripcion": "Volante motor bimasa",
+      "cantidad": 32,
+      "proveedor": "Transmission Pro",
+      "lote": "LOTE-2026-025",
+      "estado": "DEFECTUOSO",
+      "observaciones": "2 unidades con desequilibrio excesivo"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-Y-9135",
+      "descripcion": "Kit de embrague completo",
+      "cantidad": 65,
+      "proveedor": "Transmission Pro",
+      "lote": "LOTE-2026-026",
+      "estado": "OK",
+      "observaciones": "Incluye plato, disco y cojinete"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-Z-0246",
+      "descripcion": "Caja de cambios automática",
+      "cantidad": 15,
+      "proveedor": "GearBox Systems",
+      "lote": "LOTE-2026-027",
+      "estado": "OK",
+      "observaciones": "6 velocidades, reconstruida"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AA-1357",
+      "descripcion": "Diferencial autoblocante",
+      "cantidad": 20,
+      "proveedor": "DriveShaft Co",
+      "lote": "LOTE-2026-028",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AB-2468",
+      "descripcion": "Árbol de transmisión",
+      "cantidad": 38,
+      "proveedor": "DriveShaft Co",
+      "lote": "LOTE-2026-029",
+      "estado": "OK",
+      "observaciones": "Con crucetas reforzadas"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AC-3579",
+      "descripcion": "Semieje con junta homocinética",
+      "cantidad": 72,
+      "proveedor": "DriveShaft Co",
+      "lote": "LOTE-2026-030",
+      "estado": "DEFECTUOSO",
+      "observaciones": "6 unidades con fuelle roto"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AD-4680",
+      "descripcion": "Cremallera de dirección asistida",
+      "cantidad": 28,
+      "proveedor": "SteeringTech",
+      "lote": "LOTE-2026-031",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AE-5791",
+      "descripcion": "Bomba de dirección hidráulica",
+      "cantidad": 44,
+      "proveedor": "SteeringTech",
+      "lote": "LOTE-2026-032",
+      "estado": "OK",
+      "observaciones": "Incluye depósito"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AF-6802",
+      "descripcion": "Rótula de suspensión",
+      "cantidad": 130,
+      "proveedor": "SuspensionTech",
+      "lote": "LOTE-2026-033",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AG-7913",
+      "descripcion": "Silent block poliuretano",
+      "cantidad": 240,
+      "proveedor": "SuspensionTech",
+      "lote": "LOTE-2026-034",
+      "estado": "OK",
+      "observaciones": "Mayor durabilidad que goma"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AH-8024",
+      "descripcion": "Muelle helicoidal reforzado",
+      "cantidad": 88,
+      "proveedor": "SpringMasters",
+      "lote": "LOTE-2026-035",
+      "estado": "DEFECTUOSO",
+      "observaciones": "7 unidades fuera de especificación de dureza"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AI-9135",
+      "descripcion": "Barra estabilizadora",
+      "cantidad": 52,
+      "proveedor": "SuspensionTech",
+      "lote": "LOTE-2026-036",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AJ-0246",
+      "descripcion": "Cubo de rueda con rodamiento",
+      "cantidad": 96,
+      "proveedor": "BearingPro",
+      "lote": "LOTE-2026-037",
+      "estado": "OK",
+      "observaciones": "Sensor ABS integrado"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AK-1357",
+      "descripcion": "Pinza de freno flotante",
+      "cantidad": 64,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-038",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AL-2468",
+      "descripcion": "Cilindro maestro de freno",
+      "cantidad": 36,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-039",
+      "estado": "OK",
+      "observaciones": "Doble circuito"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AM-3579",
+      "descripcion": "Servofreno con ABS",
+      "cantidad": 42,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-040",
+      "estado": "DEFECTUOSO",
+      "observaciones": "3 unidades con fuga en membrana"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AN-4680",
+      "descripcion": "Latiguillo de freno trenzado",
+      "cantidad": 180,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-041",
+      "estado": "OK",
+      "observaciones": "Mayor resistencia a la presión"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AO-5791",
+      "descripcion": "Neumático 205/55 R16",
+      "cantidad": 140,
+      "proveedor": "TireWorld",
+      "lote": "LOTE-2026-042",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AP-6802",
+      "descripcion": "Llanta de aleación 16 pulgadas",
+      "cantidad": 75,
+      "proveedor": "WheelDesign",
+      "lote": "LOTE-2026-043",
+      "estado": "OK",
+      "observaciones": "Acabado cromado"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AQ-7913",
+      "descripcion": "Faro delantero LED",
+      "cantidad": 58,
+      "proveedor": "LightingSystems",
+      "lote": "LOTE-2026-044",
+      "estado": "DEFECTUOSO",
+      "observaciones": "4 unidades con LED fundido"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AR-8024",
+      "descripcion": "Piloto trasero LED",
+      "cantidad": 62,
+      "proveedor": "LightingSystems",
+      "lote": "LOTE-2026-045",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AS-9135",
+      "descripcion": "Parabrisas laminado",
+      "cantidad": 30,
+      "proveedor": "GlassTech",
+      "lote": "LOTE-2026-046",
+      "estado": "OK",
+      "observaciones": "Con sensor de lluvia"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AT-0246",
+      "descripcion": "Retrovisor exterior eléctrico",
+      "cantidad": 84,
+      "proveedor": "MirrorPro",
+      "lote": "LOTE-2026-047",
+      "estado": "OK",
+      "observaciones": "Con calefacción integrada"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AU-1357",
+      "descripcion": "Elevalunas eléctrico",
+      "cantidad": 92,
+      "proveedor": "InteriorTech",
+      "lote": "LOTE-2026-048",
+      "estado": "DEFECTUOSO",
+      "observaciones": "8 unidades con motor defectuoso"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AV-2468",
+      "descripcion": "Cerradura centralizada",
+      "cantidad": 76,
+      "proveedor": "SecuritySystems",
+      "lote": "LOTE-2026-049",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AW-3579",
+      "descripcion": "Airbag frontal conductor",
+      "cantidad": 50,
+      "proveedor": "SafetyFirst",
+      "lote": "LOTE-2026-050",
+      "estado": "OK",
+      "observaciones": "Homologación ECE vigente"
+    }
+  ]
+}

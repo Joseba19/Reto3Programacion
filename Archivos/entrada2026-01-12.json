@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "fecha_generacion": "2026-01-12T08:00:00",
+    "origen": "Almacen Central - España",
+    "version": "1.1",
+    "total_registros": 50
+  },
+  "recepciones": [
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-A-1234",
+      "descripcion": "Filtro de aceite premium",
+      "cantidad": 150,
+      "cantidad_defectuosas": 3,
+      "proveedor": "ProveedorTech",
+      "lote": "LOTE-2026-001",
+      "estado": "DEFECTUOSO",
+      "observaciones": "3 unidades con embalaje dañado"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-B-5678",
+      "descripcion": "Bujía de encendido",
+      "cantidad": 200,
+      "cantidad_defectuosas": 0,
+      "proveedor": "AutoParts Inc",
+      "lote": "LOTE-2026-002",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-C-9012",
+      "descripcion": "Pastilla de freno delantera",
+      "cantidad": 100,
+      "cantidad_defectuosas": 5,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-003",
+      "estado": "DEFECTUOSO",
+      "observaciones": "5 unidades con grietas"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-D-3456",
+      "descripcion": "Correa de distribución",
+      "cantidad": 75,
+      "cantidad_defectuosas": 2,
+      "proveedor": "BeltMasters",
+      "lote": "LOTE-2026-005",
+      "estado": "DEFECTUOSO",
+      "observaciones": "2 unidades con desgaste prematuro"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-E-7890",
+      "descripcion": "Radiador completo",
+      "cantidad": 30,
+      "cantidad_defectuosas": 2,
+      "proveedor": "CoolingSystems",
+      "lote": "LOTE-2026-006",
+      "estado": "DEFECTUOSO",
+      "observaciones": "2 unidades con fugas"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-F-2468",
+      "descripcion": "Bomba de combustible",
+      "cantidad": 120,
+      "cantidad_defectuosas": 0,
+      "proveedor": "FuelPro",
+      "lote": "LOTE-2026-007",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-G-1357",
+      "descripcion": "Amortiguador trasero",
+      "cantidad": 80,
+      "cantidad_defectuosas": 4,
+      "proveedor": "SuspensionTech",
+      "lote": "LOTE-2026-008",
+      "estado": "DEFECTUOSO",
+      "observaciones": "4 unidades pierden aceite"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-H-2468",
+      "descripcion": "Disco de freno ventilado",
+      "cantidad": 90,
+      "cantidad_defectuosas": 0,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-009",
+      "estado": "OK",
+      "observaciones": ""
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-J-4680",
+      "descripcion": "Alternador 120A",
+      "cantidad": 60,
+      "cantidad_defectuosas": 3,
+      "proveedor": "ElectricMotors",
+      "lote": "LOTE-2026-011",
+      "estado": "DEFECTUOSO",
+      "observaciones": "3 unidades no cargan"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-X-8024",
+      "descripcion": "Volante motor bimasa",
+      "cantidad": 32,
+      "cantidad_defectuosas": 2,
+      "proveedor": "Transmission Pro",
+      "lote": "LOTE-2026-025",
+      "estado": "DEFECTUOSO",
+      "observaciones": "2 unidades desequilibradas"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AC-3579",
+      "descripcion": "Semieje con junta homocinética",
+      "cantidad": 72,
+      "cantidad_defectuosas": 6,
+      "proveedor": "DriveShaft Co",
+      "lote": "LOTE-2026-030",
+      "estado": "DEFECTUOSO",
+      "observaciones": "6 unidades con fuelle roto"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AH-8024",
+      "descripcion": "Muelle helicoidal reforzado",
+      "cantidad": 88,
+      "cantidad_defectuosas": 7,
+      "proveedor": "SpringMasters",
+      "lote": "LOTE-2026-035",
+      "estado": "DEFECTUOSO",
+      "observaciones": "Fuera de dureza"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AM-3579",
+      "descripcion": "Servofreno con ABS",
+      "cantidad": 42,
+      "cantidad_defectuosas": 3,
+      "proveedor": "BrakeSupply",
+      "lote": "LOTE-2026-040",
+      "estado": "DEFECTUOSO",
+      "observaciones": "Fuga en membrana"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AQ-7913",
+      "descripcion": "Faro delantero LED",
+      "cantidad": 58,
+      "cantidad_defectuosas": 4,
+      "proveedor": "LightingSystems",
+      "lote": "LOTE-2026-044",
+      "estado": "DEFECTUOSO",
+      "observaciones": "LED fundidos"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AU-1357",
+      "descripcion": "Elevalunas eléctrico",
+      "cantidad": 92,
+      "cantidad_defectuosas": 8,
+      "proveedor": "InteriorTech",
+      "lote": "LOTE-2026-048",
+      "estado": "DEFECTUOSO",
+      "observaciones": "Motores averiados"
+    },
+    {
+      "fecha": "2026-01-12",
+      "codigo": "COMP-AW-3579",
+      "descripcion": "Airbag frontal conductor",
+      "cantidad": 50,
+      "cantidad_defectuosas": 1,
+      "proveedor": "SafetyFirst",
+      "lote": "LOTE-2026-050",
+      "estado": "DEFECTUOSO",
+      "observaciones": "1 unidad sin inflador"
+    }
+  ]
+}
