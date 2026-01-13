@@ -65,6 +65,9 @@ def insertarEntradas():
             observaciones = recepcion["observaciones"]
 
             cursor.execute(f"INSERT INTO recepciones(fecha, codigo_componente, descripcion, cantidad, cantidad_defectuosas, proveedor, lote, estado, observaciones) VALUES ('{fecha}', '{codigo}', '{descripcion}', {cantidad}, '{cantidad_defectuosas}', '{proveedor}', '{lote}', '{estado}', '{observaciones}')")
+        print("Datos introducidos correctamente")
+    else:
+        print("No hay datos nuevos que insertar")
     conn.commit()
     conn.close()
 
@@ -148,9 +151,9 @@ ORDER BY total_defectuosos DESC;
 def eliminarTablas():
     conn = sqlite3.connect("inventario.db")
     cursor = conn.cursor()
-    cursor.execute("DROP TABLE recepciones")
-    cursor.execute("DROP TABLE componentes")
-    cursor.execute("DROP TABLE defectuosos")
+    #cursor.execute("DROP TABLE recepciones")
+    #cursor.execute("DROP TABLE componentes")
+    #cursor.execute("DROP TABLE defectuosos")
     conn.commit()
     conn.close()
 
@@ -164,19 +167,25 @@ if __name__ == "__main__":
         print("3: Buscar componente")
         print("4: Elminar la base de datos")
         print("5: Salir")
-        eleccion = int(input())
+        eleccion = input("\n")
         
-        if eleccion == 1:
+        while not eleccion.isnumeric():
+            eleccion = input("Debes introducir un numero: ")
+        
+        while int(eleccion) < 0 or int(eleccion) > 6:
+            eleccion = input("El numero debe ser uno entre el 1 y el 5: ")
+        
+        if int(eleccion) == 1:
             insertarEntradas()
             entradaToComponentes()
             entradaToDefectuosos()
-        elif eleccion == 2:
+        elif int(eleccion) == 2:
             print("")
             visualizarComponentes()
-        elif eleccion == 3:
+        elif int(eleccion) == 3:
             componente = input("\nIntroduce el codigo del componente que quieres buscar: ")
             buscarComponente(componente)
-        elif eleccion == 4:
+        elif int(eleccion) == 4:
             eliminarTablas()
-        elif eleccion == 5:
+        elif int(eleccion) == 5:
             exit = True
