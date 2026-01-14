@@ -1,0 +1,309 @@
+/* --- MODO CLARO --- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-bar {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.controles {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.etiqueta-tema {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#btn-tema {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffffff;
+    color: #212121;
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+#btn-tema:hover {
+    background-color: #eeeeee;
+}
+
+.subtitulo {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.panel-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.badge span {
+    font-weight: bold;
+}
+
+.fabrica {
+    width: 960px;
+    height: 320px;
+    background: linear-gradient(#fafafa, #e0e0e0);
+    border: 3px solid #bdbdbd;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Cinta transportadora */
+.cinta-base {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #d7ccc8;
+    border-top: 4px solid #a1887f;
+    border-bottom: 4px solid #a1887f;
+}
+
+.cinta-banda {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 200%;
+    height: 36px;
+    background: linear-gradient(90deg, #8d6e63 50%, #6d4c41 50%);
+    background-size: 40px 100%;
+    animation: banda-mueve 2s linear infinite;
+}
+
+@keyframes banda-mueve {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-40px); }
+}
+
+.rodillo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #a1887f 10%, #6d4c41 60%, #4e342e 100%);
+    bottom: 18px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+    animation: rodillo-gira 1s linear infinite;
+}
+
+@keyframes rodillo-gira {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Estaciones */
+.estacion {
+    position: absolute;
+    top: 30px;
+    width: 170px;
+    height: 70px;
+    border-radius: 8px;
+    border: 2px solid #bdbdbd;
+    background: linear-gradient(#ffffff, #eeeeee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.estacion h3 {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.luz {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-top: 4px;
+    border: 1px solid #555;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.luz-verde {
+    background-color: #4caf50;
+    animation: luz-verde 1s ease-in-out infinite alternate;
+}
+
+.luz-amarilla {
+    background-color: #ffc107;
+    animation: luz-amarilla 0.8s ease-in-out infinite alternate;
+}
+
+.luz-roja {
+    background-color: #e53935;
+    animation: luz-roja 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes luz-verde {
+    0% { box-shadow: 0 0 4px #4caf50; opacity: 0.6; }
+    100% { box-shadow: 0 0 10px #66bb6a; opacity: 1; }
+}
+
+@keyframes luz-amarilla {
+    0% { box-shadow: 0 0 4px #ffc107; opacity: 0.6; }
+    100% { box-shadow: 0 0 10px #ffd54f; opacity: 1; }
+}
+
+@keyframes luz-roja {
+    0% { box-shadow: 0 0 4px #e53935; opacity: 0.6; }
+    100% { box-shadow: 0 0 10px #ef5350; opacity: 1; }
+}
+
+#est-chasis { left: 20px; }
+#est-motor { left: 210px; }
+#est-carroceria { left: 400px; }
+#est-ruedas { left: 590px; }
+#est-pintura { left: 780px; }
+
+/* Coches */
+.coche {
+    position: absolute;
+    bottom: 95px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px 10px 8px 8px;
+    background-color: #90a4ae;
+    border: 2px solid #37474f;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    animation-name: mover-coche, color-coche;
+    animation-duration: 24s, 24s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, infinite;
+}
+
+.techo {
+    position: absolute;
+    top: -18px;
+    left: 12px;
+    width: 50px;
+    height: 22px;
+    border-radius: 8px 8px 2px 2px;
+    background-color: #b0bec5;
+    border: 2px solid #37474f;
+}
+
+.ventana {
+    position: absolute;
+    top: -14px;
+    width: 18px;
+    height: 14px;
+    background-color: #eceff1;
+    border-radius: 3px;
+    border: 1px solid #607d8b;
+}
+
+.ventana.izq { left: 14px; }
+.ventana.der { right: 14px; }
+
+.rueda {
+    position: absolute;
+    bottom: -12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #263238;
+    border: 2px solid #000;
+    box-shadow: 0 0 3px rgba(0,0,0,0.7);
+}
+
+.rueda::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #90a4ae;
+}
+
+.rueda.izq { left: 10px; }
+.rueda.der { right: 10px; }
+
+/* Cambio de color según etapa */
+@keyframes color-coche {
+    0%   { background-color: #b0bec5; }
+    20%  { background-color: #90a4ae; }
+    40%  { background-color: #78909c; }
+    60%  { background-color: #ffb74d; }
+    80%  { background-color: #ef5350; }
+    100% { background-color: #ef5350; }
+}
+
+#coche1 { animation-delay: 0s, 0s; }
+#coche2 { animation-delay: 4s, 4s; }
+#coche3 { animation-delay: 8s, 8s; }
+
+@keyframes mover-coche {
+    0%   { left: -120px; }
+    100% { left: 100%; }
+}
+
+/* Coche terminado */
+.coche-listo {
+    position: absolute;
+    top: 40px;
+    right: -200px;
+    font-size: 20px;
+    animation: coche-listo 24s linear infinite;
+}
+
+@keyframes coche-listo {
+    0%   { right: -200px; opacity: 0; }
+    70%  { right: -200px; opacity: 0; }
+    80%  { right: 40px; opacity: 1; }
+    100% { right: -200px; opacity: 0; }
+}
+
+/* Texto de cola */
+.cola {
+    position: absolute;
+    bottom: 145px;
+    left: 230px;
+    font-size: 11px;
+    opacity: 0.8;
+    animation: cola-parpadea 2s ease-in-out infinite;
+}
+
+@keyframes cola-parpadea {
+    0% { opacity: 0; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0; }
+}

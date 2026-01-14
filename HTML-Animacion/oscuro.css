@@ -1,0 +1,34 @@
+/* oscuro.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.subtitulo {
+    width: 90%;
+    max-width: 900px;
+    margin: 10px auto 20px;
+}
+
+/* MISMO banner en los dos temas */
+.top-bar {
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: #ffffff;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #263238;
+    color: #f5f5f5;
+    border: 1px solid #555;
+}
+.btn-tema {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #263238;
+    color: #f5f5f5;
+    border: 1px solid #555555;
+}

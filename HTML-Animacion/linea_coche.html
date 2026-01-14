@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Producción de Coche</title>
+    
+    <!-- Enlace al CSS del tema -->
+    <link id="tema-css" rel="stylesheet" href="oscuro.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top-bar {
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .top-bar h1 {
+            font-size: 24px;
+        }
+
+        .controles {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-tema {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .control-velocidad {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .control-velocidad input {
+            width: 100px;
+        }
+
+        .subtitulo {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .contenedor-linea {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .cinta {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Estaciones de trabajo */
+        .estacion {
+            position: absolute;
+            top: 10px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .estacion-1 {
+            left: 10%;
+            background: linear-gradient(135deg, #1976d2, #42a5f5);
+        }
+
+        .estacion-2 {
+            left: 40%;
+            background: linear-gradient(135deg, #d32f2f, #f44336);
+            animation: parpadeo 2s infinite;
+        }
+
+        .estacion-3 {
+            left: 75%;
+            background: linear-gradient(135deg, #388e3c, #66bb6a);
+        }
+
+        @keyframes parpadeo {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .estacion-tiempo {
+            display: block;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+
+        /* Camino transportador */
+        .camino {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            right: 0;
+            height: 50px;
+            border: 3px solid #333;
+            border-radius: 6px;
+        }
+
+        /* Coches */
+        .coche {
+            position: absolute;
+            bottom: 15px;
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid #333;
+            animation: mover-coche 15s linear infinite;
+        }
+
+        /* Ruedas */
+        .coche::before,
+        .coche::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #212121;
+        }
+        .coche::before { left: 8px; }
+        .coche::after { right: 8px; }
+
+        @keyframes mover-coche {
+            0% { left: -70px; }
+            30% { left: 35%; }
+            55% { left: 42%; } /* se ralentiza en pintura */
+            80% { left: 80%; }
+            100% { left: 105%; }
+        }
+
+        /* Diferentes coches */
+        .coche:nth-child(1) {
+            background-color: #ffeb3b;
+            animation-delay: 0s;
+        }
+
+        .coche:nth-child(2) {
+            background-color: #ff9800;
+            animation-delay: 4s;
+        }
+
+        .coche:nth-child(3) {
+            background-color: #4caf50;
+            animation-delay: 8s;
+        }
+
+        .coche:nth-child(4) {
+            background-color: #2196f3;
+            animation-delay: 12s;
+        }
+
+        .info {
+            width: 90%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            margin: 5px 10px 5px 0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <h1>🏭 Línea de Producción de Coche</h1>
+        <div class="controles">
+            <button id="btn-tema" class="btn-tema">☀️ Cambiar tema</button>
+            
+            <div class="control-velocidad">
+                <span>⚡ Velocidad:</span>
+                <input type="range" id="velocidad" min="0.5" max="2" step="0.1" value="1">
+                <span id="valor-velocidad">1x</span>
+            </div>
+        </div>
+    </header>
+
+    <p class="subtitulo">
+        Los coches se mueven por la cinta transportadora. La estación roja (Pintura) es un cuello de botella donde se ralentizan.
+    </p>
+
+    <div class="contenedor-linea">
+        <div class="cinta">
+            
+            <!-- Estaciones -->
+            <div class="estacion estacion-1">
+                🔧 Montaje
+                <span class="estacion-tiempo">3s</span>
+            </div>
+            
+            <div class="estacion estacion-2">
+                🎨 Pintura
+                <span class="estacion-tiempo">8s ⚠️</span>
+            </div>
+            
+            <div class="estacion estacion-3">
+                ✅ Control
+                <span class="estacion-tiempo">2s</span>
+            </div>
+
+            <!-- Camino transportador -->
+            <div class="camino">
+                <!-- Coches -->
+                <div class="coche"></div>
+                <div class="coche"></div>
+                <div class="coche"></div>
+                <div class="coche"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div>
+            <span class="badge" style="background: linear-gradient(135deg, #1976d2, #42a5f5); color: white;">
+                🔧 Montaje (Normal)
+            </span>
+            <span class="badge" style="background: linear-gradient(135deg, #d32f2f, #f44336); color: white;">
+                🎨 Pintura (Cuello de botella)
+            </span>
+            <span class="badge" style="background: linear-gradient(135deg, #388e3c, #66bb6a); color: white;">
+                ✅ Control (Normal)
+            </span>
+        </div>
+        <p style="margin-top: 15px;">
+            <strong>💡 Nota:</strong> La estación de pintura parpadea porque es donde se acumulan los coches y se ralentiza la producción.
+        </p>
+    </div>
+
+    <script>
+        // Cambiar tema
+        var btnTema = document.getElementById('btn-tema');
+        var linkTema = document.getElementById('tema-css');
+        var modoOscuro = true;
+
+        btnTema.onclick = function() {
+            if (modoOscuro) {
+                linkTema.href = 'blanco.css';
+                modoOscuro = false;
+            } else {
+                linkTema.href = 'oscuro.css';
+                modoOscuro = true;
+            }
+        };
+
+        // Control de velocidad
+        var inputVelocidad = document.getElementById('velocidad');
+        var valorVelocidad = document.getElementById('valor-velocidad');
+
+        inputVelocidad.oninput = function() {
+            var velocidad = inputVelocidad.value;
+            valorVelocidad.textContent = velocidad + 'x';
+            
+            var duracion = 15 / velocidad;
+            
+            var coches = document.getElementsByClassName('coche');
+            for (var i = 0; i < coches.length; i++) {
+                coches[i].style.animationDuration = duracion + 's';
+            }
+        };
+    </script>
+    
+</body>
+</html>

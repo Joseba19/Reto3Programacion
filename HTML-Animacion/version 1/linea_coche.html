@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Producción de Coche</title>
+
+    <!-- Tema por defecto -->
+    <link id="tema-css" rel="stylesheet" href="oscuro.css">
+    <style>
+        /* SOLO cosas mínimas de animación, para que lo veas claro.
+           Si quieres, puedes mover esto a tu CSS más adelante. */
+
+        .contenedor-linea {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .cinta-simple {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            background-color: #777; /* gris cinta */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Zona cuello de botella (bloque rojo fijo) */
+        .cuello-botella {
+            position: absolute;
+            left: 40%;
+            top: 0;
+            width: 60px;
+            height: 100%;
+            background-color: #b71c1c;
+            opacity: 0.7;
+        }
+
+        /* Coches muy simples: rectángulos */
+        .coche-simple {
+            position: absolute;
+            bottom: 10px;
+            width: 70px;
+            height: 35px;
+            border-radius: 6px;
+            background-color: #ffeb3b;
+            border: 2px solid #333;
+            animation-name: mover-coche-simple;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        /* ruedas */
+        .coche-simple::before,
+        .coche-simple::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #212121;
+        }
+        .coche-simple::before { left: 8px; }
+        .coche-simple::after  { right: 8px; }
+
+        /* 3 coches con distintas velocidades para que se vea el cuello de botella */
+        #coche-a {
+            animation-duration: 10s;
+            animation-delay: 0s;
+        }
+        #coche-b {
+            animation-duration: 16s; /* más lento = se acumula en el rojo */
+            animation-delay: 2s;
+            background-color: #ff9800;
+        }
+        #coche-c {
+            animation-duration: 10s;
+            animation-delay: 4s;
+            background-color: #4caf50;
+        }
+
+        /* Animación: ir de -80px a 100% del ancho */
+        @keyframes mover-coche-simple {
+            0%   { left: -80px; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <h1>Línea de Producción de Coche</h1>
+        <div class="controles">
+            <span class="etiqueta-tema">Tema:</span>
+            <button id="btn-tema">Cambiar a modo claro</button>
+        </div>
+    </header>
+
+    <p class="subtitulo">
+        Cada coche se mueve por la cinta. La zona roja representa el cuello de botella (va más lento cerca de ahí).
+    </p>
+
+    <div class="panel-info">
+        <div class="badge"><span>Zona gris:</span> cinta transportadora.</div>
+        <div class="badge"><span>Zona roja:</span> cuello de botella.</div>
+        <div class="badge"><span>Coches:</span> rectángulos animados de izquierda a derecha.</div>
+    </div>
+
+    <!-- NUEVA animación sencilla -->
+    <div class="contenedor-linea">
+        <div class="cinta-simple">
+            <div class="cuello-botella"></div>
+
+            <!-- Coches -->
+            <div id="coche-a" class="coche-simple"></div>
+            <div id="coche-b" class="coche-simple"></div>
+            <div id="coche-c" class="coche-simple"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPT para cambiar entre oscuro.css y claro.css -->
+    <script>
+        const botonTema = document.getElementById('btn-tema');
+        const linkTema = document.getElementById('tema-css');
+        let modoOscuro = true;
+
+        botonTema.addEventListener('click', () => {
+            if (modoOscuro) {
+                linkTema.setAttribute('href', 'claro.css');
+                botonTema.textContent = 'Cambiar a modo oscuro';
+                modoOscuro = false;
+            } else {
+                linkTema.setAttribute('href', 'oscuro.css');
+                botonTema.textContent = 'Cambiar a modo claro';
+                modoOscuro = true;
+            }
+        });
+    </script>
+</body>
+</html>
