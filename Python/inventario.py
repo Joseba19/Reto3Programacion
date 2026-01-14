@@ -88,6 +88,7 @@ def entradaToComponentes():
                 cursor.execute(f"INSERT INTO componentes(codigo, descripcion, stock, ultimaEntrada) VALUES ('{s[2]}', '{s[3]}', {s[4]}, '{s[1]}')")
             elif len(fila) > 0:
                 cursor.execute(f"UPDATE componentes SET stock = stock + {s[4]} WHERE codigo = '{s[2]}'")
+                cursor.execute(f"UPDATE componentes SET ultimaEntrada = '{s[1]}' WHERE codigo = '{s[2]}'")
 
     conn.commit()
     conn.close()
@@ -124,25 +125,21 @@ def buscarComponente(componente):
     cursor = conn.cursor()
     #Consulta SQL generada mediante Inteligencia Artificial
     cursor.execute(f"""
-    SELECT
-    c.codigo,
-    c.descripcion,
-    d.tipo_defecto,
-    SUM(d.cantidad_defectuosa) AS total_defectuosos
-FROM componentes c
-JOIN recepciones r 
-    ON r.codigo_componente = c.codigo
-JOIN defectuosos d 
-    ON d.id_recepcion = r.id
-WHERE c.codigo = '{componente}'
-GROUP BY c.codigo, c.descripcion, d.tipo_defecto
-ORDER BY total_defectuosos DESC;
-""")
+        SELECT c.codigo, c.descripcion, d.tipo_defecto, SUM(d.cantidad_defectuosa) AS total_defectuosos
+        FROM componentes c
+        JOIN recepciones r 
+        ON r.codigo_componente = c.codigo
+        JOIN defectuosos d 
+        ON d.id_recepcion = r.id
+        WHERE c.codigo = '{componente}'
+        GROUP BY c.codigo, c.descripcion, d.tipo_defecto
+        ORDER BY total_defectuosos DESC;
+        """)
     salida = cursor.fetchall()
     
     for s in salida:
         print(f"\n{s[0]}: {s[1]}")
-        print(f"Unidades defectuosas:{s[3]}")
+        print(f"Unidades defectuosas: {s[3]}")
         print(f"Motivo: {s[2]}")
 
     conn.commit()
