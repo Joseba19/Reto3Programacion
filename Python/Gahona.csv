@@ -1,0 +1,50 @@
+id,codigo,descripcion,stock,ultimaEntrada
+1,COMP-A-1234,Filtro de aceite premium,480,2026-01-21
+2,COMP-B-5678,Bujía de encendido,620,2026-01-21
+3,COMP-C-9012,Pastilla de freno delantera,325,2026-01-21
+4,COMP-D-3456,Correa de distribución,245,2026-01-21
+5,COMP-E-7890,Radiador completo,102,2026-01-21
+6,COMP-F-2468,Bomba de combustible,350,2026-01-21
+7,COMP-G-1357,Amortiguador trasero,238,2026-01-21
+8,COMP-H-2468,Disco de freno ventilado,285,2026-01-21
+9,COMP-J-4680,Alternador 120A,183,2026-01-21
+10,COMP-X-8024,Volante motor bimasa,104,2026-01-21
+11,COMP-AC-3579,Semieje con junta homocinética,229,2026-01-21
+12,COMP-AH-8024,Muelle helicoidal reforzado,281,2026-01-21
+13,COMP-AM-3579,Servofreno con ABS,136,2026-01-21
+14,COMP-AQ-7913,Faro delantero LED,186,2026-01-21
+15,COMP-AU-1357,Elevalunas eléctrico,272,2026-01-21
+16,COMP-AW-3579,Airbag frontal conductor,160,2026-01-21
+17,COMP-K-7531,Turbocompresor variable,93,2026-01-21
+18,COMP-L-9642,Sensor de oxígeno,340,2026-01-21
+19,COMP-M-8520,Batería 70Ah AGM,210,2026-01-21
+20,COMP-N-3698,Neumático 205/55R16,450,2026-01-21
+21,COMP-O-1472,Embrague completo,123,2026-01-21
+22,COMP-P-9630,Escape catalítico,153,2026-01-21
+23,COMP-Q-7412,Filtro de aire deportivo,320,2026-01-21
+24,COMP-R-8524,Termostato electrónico,272,2026-01-21
+25,COMP-S-3691,Bomba de agua,208,2026-01-21
+26,COMP-T-7536,Junta de culata multicapa,187,2026-01-21
+27,COMP-U-1593,Inyector Common Rail,270,2026-01-21
+28,COMP-V-9517,Kit distribución completo,147,2026-01-21
+29,COMP-W-7539,Sensor de temperatura,380,2026-01-21
+30,COMP-Y-4567,Caja de cambios automática,56,2026-01-21
+31,COMP-Z-3698,Motor de arranque reforzado,168,2026-01-21
+32,COMP-AA-1472,Cilindro maestro de freno,134,2026-01-21
+33,COMP-AB-9514,Rótula de dirección,301,2026-01-21
+34,COMP-AD-7531,Cremallera de dirección asistida,106,2026-01-21
+35,COMP-AE-9517,Cojinete de rueda sellado,359,2026-01-21
+36,COMP-AF-8520,Filtro de habitáculo carbón activo,450,2026-01-21
+37,COMP-AG-3691,Pinza de freno flotante,188,2026-01-21
+38,COMP-AI-1472,Tensor correa auxiliar automático,277,2026-01-21
+39,COMP-AJ-9514,Válvula EGR electrónica,119,2026-01-21
+40,COMP-AK-7531,Intercooler aluminio,88,2026-01-21
+41,COMP-AL-4567,Palier de transmisión,162,2026-01-21
+42,COMP-AN-9517,Módulo control motor ECU,74,2026-01-21
+43,COMP-AO-8520,Soporte motor hidráulico,222,2026-01-21
+44,COMP-AP-3691,Líquido refrigerante 5L,590,2026-01-21
+45,COMP-AR-1472,Espejo retrovisor eléctrico,219,2026-01-21
+46,COMP-AS-9514,Centralita ABS/ESP,99,2026-01-21
+47,COMP-AT-7531,Sensor ABS rueda,371,2026-01-21
+48,COMP-AV-4567,Catalizador cerámico,144,2026-01-21
+49,COMP-AX-9517,Silencioso trasero inoxidable,177,2026-01-21
