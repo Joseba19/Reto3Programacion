@@ -59,7 +59,7 @@ def insertarEntradas():
     
     #Abre el archivo que contiene la fecha de hoy
     with open(f"Archivos/entrada{date.today()}.json", "r") as f:
-                inventario = json.load(f)
+        inventario = json.load(f)
 
     #Si la fecha actual es mayor a la ultima fecha registrada recorre el archivo guardando en variables todos los datos, para despues introducirlos con una consulta SQL (Linea 77)
     if date.today() > date.fromisoformat(ultimaFecha[0][0]):
@@ -189,7 +189,7 @@ def buscarComponente(componente):
         """, (componente,))
     
     salida = cursor.fetchall()
-    
+
     if salida:
         for s in salida:
             print(f"\n{s[0]}: {s[1]}")
@@ -222,12 +222,38 @@ def exportarcsv(nombreCSV = "componentes"):
 
     conn.close()
 
-#Funcion que sirve para elinimar el stock de un componente de manera manual, aun por implementar
+#Funcion que sirve para elinimar el stock de un componente de manera manual
 def eliminarstock(componente, cantidad):
-    pass
+    conn = sqlite3.connect(bbdd)
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM componentes WHERE codigo = ?", (componente,))
+    salida = cursor.fetchall()
+
+    if salida:
+        cursor.execute("UPDATE componentes SET stock = stock - ? WHERE codigo = ?", (cantidad, componente))
+        print("\nRegistros actualizados correctamente")
+    else:
+        print("\nNo hay registros con ese codigo")
     
+    conn.commit()
+    conn.close()
+
+#Funcion que sirve para elinimar el stock de un componente en masa, mediante un JSON
 def eliminarstockJSON():
-    pass
+    conn = sqlite3.connect(bbdd)
+    cursor = conn.cursor()
+    with open(f"Archivos/salida{date.today()}.json", "r") as f:
+        eliminados = json.load(f)
+        
+    for componente in eliminados['salidas']:
+        codigo = componente["codigo"]
+        cantidad = componente["cantidad"]
+        
+        cursor.execute("UPDATE componentes SET stock = stock - ? WHERE codigo = ?", (cantidad, codigo))
+
+    conn.commit()
+    conn.close()
+
 
 if __name__ == "__main__":
     exit = False
@@ -238,7 +264,7 @@ if __name__ == "__main__":
         print("\n=== INVENTARIO ===\n")
         print("1: Insertar nueva entrada")
         print("2: Visualizar componentes y stock")
-        print("3: Buscar componente")
+        print("3: Buscar componentes defectuosos")
         print("4: Exportar componentes en formato CSV")
         print("5: Eliminar stock")
         print("6: Elminar la base de datos")

@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "fecha_generacion": "2026-01-28T11:20:00",
+    "origen": "Almacen Central - España",
+    "version": "1.0",
+    "total_registros": 50
+  },
+  "salidas": [
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-A-1234",
+      "cantidad": 45
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-B-5678",
+      "cantidad": 78
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-C-9012",
+      "cantidad": 32
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-D-3456",
+      "cantidad": 28
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-E-7890",
+      "cantidad": 12
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-F-2468",
+      "cantidad": 41
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-G-1357",
+      "cantidad": 35
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-H-2468",
+      "cantidad": 38
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-J-4680",
+      "cantidad": 22
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-K-7531",
+      "cantidad": 18
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-L-9642",
+      "cantidad": 52
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-M-8520",
+      "cantidad": 36
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-N-3698",
+      "cantidad": 88
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-O-1472",
+      "cantidad": 24
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-P-9630",
+      "cantidad": 29
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-Q-7412",
+      "cantidad": 58
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-R-8524",
+      "cantidad": 44
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-S-3691",
+      "cantidad": 39
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-T-7536",
+      "cantidad": 33
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-U-1593",
+      "cantidad": 47
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-V-9517",
+      "cantidad": 26
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-W-7539",
+      "cantidad": 65
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-X-8024",
+      "cantidad": 14
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-Y-4567",
+      "cantidad": 11
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-Z-3698",
+      "cantidad": 31
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AA-1472",
+      "cantidad": 25
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AB-9514",
+      "cantidad": 56
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AC-3579",
+      "cantidad": 28
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AD-7531",
+      "cantidad": 19
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AE-9517",
+      "cantidad": 62
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AF-8520",
+      "cantidad": 74
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AG-3691",
+      "cantidad": 34
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AH-8024",
+      "cantidad": 37
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AI-1472",
+      "cantidad": 49
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AJ-9514",
+      "cantidad": 21
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AK-7531",
+      "cantidad": 16
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AL-4567",
+      "cantidad": 29
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AM-3579",
+      "cantidad": 17
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AN-9517",
+      "cantidad": 15
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AO-8520",
+      "cantidad": 42
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AP-3691",
+      "cantidad": 95
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AQ-7913",
+      "cantidad": 23
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AR-1472",
+      "cantidad": 40
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AS-9514",
+      "cantidad": 18
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AT-7531",
+      "cantidad": 61
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AU-1357",
+      "cantidad": 33
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AV-4567",
+      "cantidad": 27
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AW-3579",
+      "cantidad": 20
+    },
+    {
+      "fecha": "2026-01-28",
+      "codigo": "COMP-AX-9517",
+      "cantidad": 32
+    }
+  ]
+}
